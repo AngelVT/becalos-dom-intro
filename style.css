@@ -1,0 +1,67 @@
+:root {
+    --danger: #D64550;
+    --background: #A7B8BD;
+    --black: #454545;
+    --white: #f5f5f5;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--background);
+}
+
+main {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.formulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.formulario textarea {
+    width: 100%;
+    min-height: 100px;
+    height: 100px;
+    max-height: 200px;
+    resize: vertical;
+}
+
+.comments-container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.comment {
+    position: relative;
+    border: 1px solid var(--black);
+    padding: 20px;
+    border-radius: 15px;
+    background-color: var(--white);
+}
+
+.comment .comment-date {
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    font-size: 12px;
+    text-align: right;
+}
+
+.comment span {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: var(--danger);
+}
